@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
   <parent>
@@ -22,7 +21,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>5.4.1-SNAPSHOT</version>
+  <version>5.4.0.object_param.1.Final</version>
 
   <name>jBPM multiproject</name>
   <description>jBPM: a Business Process Management (BPM) Suite</description>
@@ -38,12 +37,12 @@
     <maven.hibernate.dialect>org.hibernate.dialect.H2Dialect</maven.hibernate.dialect>
     <maven.datasource.classname>bitronix.tm.resource.jdbc.lrc.LrcXADataSource</maven.datasource.classname>
     <maven.jdbc.driver.class>org.h2.Driver</maven.jdbc.driver.class>
-    <maven.jdbc.db.name/>
-    <maven.jdbc.db.port/>
-    <maven.jdbc.db.server/>     
-    <maven.jdbc.driver.jar/>
-    <maven.jdbc.username></maven.jdbc.username>
-    <maven.jdbc.password></maven.jdbc.password>
+    <maven.jdbc.db.name />
+    <maven.jdbc.db.port />
+    <maven.jdbc.db.server />     
+    <maven.jdbc.driver.jar />
+    <maven.jdbc.username />
+    <maven.jdbc.password />
     <maven.jdbc.url>jdbc:h2:</maven.jdbc.url>
     <maven.jdbc.schema>public</maven.jdbc.schema>
   </properties>
@@ -239,7 +238,7 @@
                     <!-- JBPMorm.xml: mapping -->
                     <replacement>
                       <token>(&lt;!--|):JPA2 REMOVE ME:(--&gt;|)</token>
-                      <value></value>
+                      <value />
                     </replacement>
                   </replacements>
                 </configuration>
