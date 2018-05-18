@@ -124,7 +124,7 @@ public class JPAWorkingMemoryDbLogger extends WorkingMemoryLogger {
     	 EntityManager em = getEntityManager();
          UserTransaction ut = joinTransaction(em);
          List<ProcessInstanceLog> result = em.createQuery(
-         "from ProcessInstanceLog as log where log.processInstanceId = ? and log.end is null")
+         "from ProcessInstanceLog as log where log.processInstanceId = ?1 and log.end is null")
              .setParameter(1, processEvent.getProcessInstanceId()).getResultList();
          
          if (result != null && result.size() != 0) {
